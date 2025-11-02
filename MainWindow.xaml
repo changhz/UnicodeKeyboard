@@ -7,24 +7,33 @@
         ShowActivated="False"
         AllowsTransparency="True"
         Background="Transparent">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#222222"/>
+            <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+    </Window.Resources>
     <Grid Background="#AA000000" Margin="10">
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="∈" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∉" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∪" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∩" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊆" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊇" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊂" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊃" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∅" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="℘" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊖" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊕" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊗" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="⊥" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∃" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
-            <Button Content="∀" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
+            <Button Content="∈" Click="KeyButton_Click"/>
+            <Button Content="∉" Click="KeyButton_Click"/>
+            <Button Content="∪" Click="KeyButton_Click"/>
+            <Button Content="∩" Click="KeyButton_Click"/>
+            <Button Content="⊆" Click="KeyButton_Click"/>
+            <Button Content="⊇" Click="KeyButton_Click"/>
+            <Button Content="⊂" Click="KeyButton_Click"/>
+            <Button Content="⊃" Click="KeyButton_Click"/>
+            <Button Content="∅" Click="KeyButton_Click"/>
+            <Button Content="℘" Click="KeyButton_Click"/>
+            <Button Content="⊖" Click="KeyButton_Click"/>
+            <Button Content="⊕" Click="KeyButton_Click"/>
+            <Button Content="⊗" Click="KeyButton_Click"/>
+            <Button Content="⊥" Click="KeyButton_Click"/>
+            <Button Content="∃" Click="KeyButton_Click"/>
+            <Button Content="∀" Click="KeyButton_Click"/>
         </WrapPanel>
     </Grid>
 </Window>
