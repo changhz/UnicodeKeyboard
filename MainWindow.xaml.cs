@@ -51,21 +51,42 @@ namespace VirtualKeyboardOverlay
 
         private void SendChar(char c)
         {
-            var hwnd = GetForegroundWindow();
-            if (hwnd == IntPtr.Zero) 
+            var foreground = GetForegroundWindow();
+            if (foreground == IntPtr.Zero)
                 return;
+
+            // Prefer sending to the focused child control of the foreground window (e.g. an edit box)
+            IntPtr target = foreground;
+            uint threadId = GetWindowThreadProcessId(foreground, out _);
+            GUITHREADINFO gui = new GUITHREADINFO { cbSize = Marshal.SizeOf(typeof(GUITHREADINFO)) };
+            if (threadId != 0 && GetGUIThreadInfo(threadId, ref gui) && gui.hwndFocus != IntPtr.Zero)
+            {
+                target = gui.hwndFocus;
+            }
 
             Debug.Write(c);
 
             const uint WM_UNICHAR = 0x0109;
             const uint WM_CHAR = 0x0102;
 
-            // Try WM_UNICHAR first (allows full Unicode code points on supporting windows),
-            // fallback to WM_CHAR (UTF-16 code unit).
-            if (!PostMessage(hwnd, WM_UNICHAR, (IntPtr)c, IntPtr.Zero))
+            uint codepoint = c; // BMP character; for supplementary code points you'd need surrogate handling
+
+            // Build a minimal lParam: repeat count = 1 (low word). Many controls don't require full scan-code details.
+            IntPtr lParam = MakeLParamForChar();
+
+            // Try WM_UNICHAR first (supports full Unicode on supporting windows),
+            // fallback to WM_CHAR (UTF-16 code unit) posted to the control that actually has focus.
+            if (!PostMessage(target, WM_UNICHAR, (IntPtr)codepoint, lParam))
             {
-                PostMessage(hwnd, WM_CHAR, (IntPtr)c, IntPtr.Zero);
+                PostMessage(target, WM_CHAR, (IntPtr)codepoint, lParam);
             }
+        }
+
+        private static IntPtr MakeLParamForChar()
+        {
+            // Low word: repeat count = 1
+            int repeat = 1 & 0xFFFF;
+            return (IntPtr)repeat;
         }
 
         [DllImport("user32.dll")]
@@ -113,5 +134,35 @@ namespace VirtualKeyboardOverlay
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
+
+        // New/added helpers to find the focused child control in the foreground thread
+        [DllImport("user32.dll")]
+        static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern bool GetGUIThreadInfo(uint idThread, ref GUITHREADINFO lpgui);
+
+        [StructLayout(LayoutKind.Sequential)]
+        struct GUITHREADINFO
+        {
+            public int cbSize;
+            public uint flags;
+            public IntPtr hwndActive;
+            public IntPtr hwndFocus;
+            public IntPtr hwndCapture;
+            public IntPtr hwndMenuOwner;
+            public IntPtr hwndMoveSize;
+            public IntPtr hwndCaret;
+            public RECT rcCaret;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        struct RECT
+        {
+            public int left;
+            public int top;
+            public int right;
+            public int bottom;
+        }
     }
 }
