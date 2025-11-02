@@ -16,7 +16,7 @@
             <Setter Property="FontSize" Value="25"/>
         </Style>
     </Window.Resources>
-    <Grid Background="#AA000000" Margin="10">
+    <Grid Background="#AA000000" Margin="10" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="∈" Click="KeyButton_Click"/>
             <Button Content="∉" Click="KeyButton_Click"/>

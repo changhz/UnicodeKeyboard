@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Input;
 
 namespace UnicodeKeyboard
 {
@@ -34,6 +35,11 @@ namespace UnicodeKeyboard
             keybd_event(VK_CONTROL, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
 
             this.Show();
+        }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
 
         [DllImport("user32.dll", SetLastError = true)]
