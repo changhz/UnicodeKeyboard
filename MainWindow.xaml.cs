@@ -1,6 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Controls; // For Button
+using System.Threading; // For Thread.Sleep
 
 namespace UnicodeKeyboard
 {
@@ -9,6 +11,7 @@ namespace UnicodeKeyboard
         public MainWindow()
         {
             InitializeComponent();
+            ShowSection("Set"); // Show default section
         }
 
         private void KeyButton_Click(object sender, RoutedEventArgs e)
@@ -40,6 +43,22 @@ namespace UnicodeKeyboard
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        private void SectionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button btn && btn.Tag is string tag)
+            {
+                ShowSection(tag);
+            }
+        }
+
+        private void ShowSection(string section)
+        {
+            SetSection.Visibility = section == "Set" ? Visibility.Visible : Visibility.Collapsed;
+            ArithmeticsSection.Visibility = section == "Arithmetics" ? Visibility.Visible : Visibility.Collapsed;
+            NumericsSection.Visibility = section == "Numerics" ? Visibility.Visible : Visibility.Collapsed;
+            ArrowsSection.Visibility = section == "Arrows" ? Visibility.Visible : Visibility.Collapsed;
         }
 
         [DllImport("user32.dll", SetLastError = true)]
