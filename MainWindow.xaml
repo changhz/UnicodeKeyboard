@@ -62,7 +62,18 @@
                 <!-- operators -->
                 <Button Content="∑" Click="KeyButton_Click"/>
                 <Button Content="∏" Click="KeyButton_Click"/>
+                <Button Content="∫" Click="KeyButton_Click"/>
                 <Button Content="√" Click="KeyButton_Click"/>
+                <Button Content="∝" Click="KeyButton_Click"/>
+                <Button Content="∞" Click="KeyButton_Click"/>
+                <Button Content="∂" Click="KeyButton_Click"/>
+                <Button Content="∇" Click="KeyButton_Click"/>
+                <Button Content="±" Click="KeyButton_Click"/>
+                <Button Content="×" Click="KeyButton_Click"/>
+                <Button Content="≠" Click="KeyButton_Click"/>
+                <Button Content="≈" Click="KeyButton_Click"/>
+                <Button Content="≤" Click="KeyButton_Click"/>
+                <Button Content="≥" Click="KeyButton_Click"/>
 
                 <!-- superscripts 0-9 -->
                 <Button Content="⁰" Click="KeyButton_Click"/>
