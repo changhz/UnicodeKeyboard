@@ -9,6 +9,7 @@
         Background="Transparent">
     <Grid Background="#AA000000" Margin="10">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Test" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
             <Button Content="∈" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
             <Button Content="∉" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>
             <Button Content="∪" Width="40" Height="40" FontSize="25" Click="KeyButton_Click"/>

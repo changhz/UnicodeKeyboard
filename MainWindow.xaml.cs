@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 
@@ -36,7 +37,7 @@ namespace VirtualKeyboardOverlay
             if (key == "Ctrl")
                 SendKey(VirtualKeyShort.CONTROL);
             else if (key != null)
-                SendText(key);
+                SendChar(key[0]);
         }
 
         private void SendKey(VirtualKeyShort key)
@@ -48,15 +49,22 @@ namespace VirtualKeyboardOverlay
             SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(INPUT)));
         }
 
-        private void SendText(string text)
+        private void SendChar(char c)
         {
-            foreach (char c in text)
+            var hwnd = GetForegroundWindow();
+            if (hwnd == IntPtr.Zero) 
+                return;
+
+            Debug.Write(c);
+
+            const uint WM_UNICHAR = 0x0109;
+            const uint WM_CHAR = 0x0102;
+
+            // Try WM_UNICHAR first (allows full Unicode code points on supporting windows),
+            // fallback to WM_CHAR (UTF-16 code unit).
+            if (!PostMessage(hwnd, WM_UNICHAR, (IntPtr)c, IntPtr.Zero))
             {
-                INPUT[] inputs = new INPUT[]
-                {
-                    new INPUT { type = 1, U = new InputUnion { ki = new KEYBDINPUT { wScan = c, dwFlags = KEYEVENTF.UNICODE } } }
-                };
-                SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(INPUT)));
+                PostMessage(hwnd, WM_CHAR, (IntPtr)c, IntPtr.Zero);
             }
         }
 
@@ -98,5 +106,12 @@ namespace VirtualKeyboardOverlay
         {
             UNICODE = 0x0004
         }
+
+        [DllImport("user32.dll")]
+        static extern IntPtr GetForegroundWindow();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
     }
 }
