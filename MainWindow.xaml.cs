@@ -15,7 +15,7 @@ namespace UnicodeKeyboard
             var btn = sender as System.Windows.Controls.Button;
             if (btn == null) return;
 
-            string symbol = btn.Content?.ToString();
+            string? symbol = btn.Content?.ToString();
             if (string.IsNullOrEmpty(symbol)) return;
 
             Clipboard.SetText(symbol);
