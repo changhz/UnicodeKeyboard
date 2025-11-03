@@ -109,11 +109,19 @@
                         <Button Content="∂" Click="KeyButton_Click"/>
                         <Button Content="∇" Click="KeyButton_Click"/>
                         <Button Content="±" Click="KeyButton_Click"/>
+                        <Button Content="∓" Click="KeyButton_Click"/>
+                        <Button Content="∙" Click="KeyButton_Click"/>
+                        <Button Content="∘" Click="KeyButton_Click"/>
                         <Button Content="×" Click="KeyButton_Click"/>
-                        <Button Content="≠" Click="KeyButton_Click"/>
-                        <Button Content="≈" Click="KeyButton_Click"/>
-                        <Button Content="≤" Click="KeyButton_Click"/>
-                        <Button Content="≥" Click="KeyButton_Click"/>
+                        <Button Content="⋆" Click="KeyButton_Click"/>
+                        <Button Content="⋇" Click="KeyButton_Click"/>
+                        <Button Content="⋄" Click="KeyButton_Click"/>
+                        <Button Content="⋈" Click="KeyButton_Click"/>
+                        <Button Content="⋉" Click="KeyButton_Click"/>
+                        <Button Content="⋊" Click="KeyButton_Click"/>
+                        <Button Content="⋋" Click="KeyButton_Click"/>
+                        <Button Content="⋌" Click="KeyButton_Click"/>
+                        <Button Content="∔" Click="KeyButton_Click"/>
                         <Button Content="⁰" Click="KeyButton_Click"/>
                         <Button Content="¹" Click="KeyButton_Click"/>
                         <Button Content="²" Click="KeyButton_Click"/>
@@ -339,10 +347,59 @@
                         <Button Content="∵" Click="KeyButton_Click"/>
                         <Button Content="⊻" Click="KeyButton_Click"/>
                         <Button Content="⊼" Click="KeyButton_Click"/>
+                        <Button Content="≗" Click="KeyButton_Click"/>
+                        <Button Content="≘" Click="KeyButton_Click"/>
+                        <Button Content="≙" Click="KeyButton_Click"/>
+                        <Button Content="≚" Click="KeyButton_Click"/>
+                        <Button Content="≛" Click="KeyButton_Click"/>
+                        <Button Content="≜" Click="KeyButton_Click"/>
+                        <Button Content="≝" Click="KeyButton_Click"/>
+                        <Button Content="≞" Click="KeyButton_Click"/>
+                        <Button Content="≟" Click="KeyButton_Click"/>
                         <Button Content="⊽" Click="KeyButton_Click"/>
+                        <Button Content="≠" Click="KeyButton_Click"/>
                         <Button Content="≡" Click="KeyButton_Click"/>
+                        <Button Content="≤" Click="KeyButton_Click"/>
+                        <Button Content="≥" Click="KeyButton_Click"/>
                         <Button Content="≢" Click="KeyButton_Click"/>
                         <Button Content="↦" Click="KeyButton_Click"/>
+                        <Button Content="≦" Click="KeyButton_Click"/>
+                        <Button Content="≧" Click="KeyButton_Click"/>
+                        <Button Content="≨" Click="KeyButton_Click"/>
+                        <Button Content="≩" Click="KeyButton_Click"/>
+                        <Button Content="≪" Click="KeyButton_Click"/>
+                        <Button Content="≫" Click="KeyButton_Click"/>
+                        <Button Content="≬" Click="KeyButton_Click"/>
+                        <Button Content="≭" Click="KeyButton_Click"/>
+                        <Button Content="≮" Click="KeyButton_Click"/>
+                        <Button Content="≯" Click="KeyButton_Click"/>
+                        <Button Content="≰" Click="KeyButton_Click"/>
+                        <Button Content="≱" Click="KeyButton_Click"/>
+                        <Button Content="≲" Click="KeyButton_Click"/>
+                        <Button Content="≳" Click="KeyButton_Click"/>
+                        <Button Content="≴" Click="KeyButton_Click"/>
+                        <Button Content="≵" Click="KeyButton_Click"/>
+                        <Button Content="≶" Click="KeyButton_Click"/>
+                        <Button Content="≷" Click="KeyButton_Click"/>
+                        <Button Content="≸" Click="KeyButton_Click"/>
+                        <Button Content="≹" Click="KeyButton_Click"/>
+                        <Button Content="≺" Click="KeyButton_Click"/>
+                        <Button Content="≻" Click="KeyButton_Click"/>
+                        <Button Content="≼" Click="KeyButton_Click"/>
+                        <Button Content="≽" Click="KeyButton_Click"/>
+                        <Button Content="≾" Click="KeyButton_Click"/>
+                        <Button Content="≿" Click="KeyButton_Click"/>
+                        <Button Content="⊀" Click="KeyButton_Click"/>
+                        <Button Content="⊁" Click="KeyButton_Click"/>
+                        <Button Content="⊲" Click="KeyButton_Click"/>
+                        <Button Content="⊳" Click="KeyButton_Click"/>
+                        <Button Content="⊴" Click="KeyButton_Click"/>
+                        <Button Content="⊵" Click="KeyButton_Click"/>
+                        <Button Content="⊶" Click="KeyButton_Click"/>
+                        <Button Content="⊷" Click="KeyButton_Click"/>
+                        <Button Content="⊸" Click="KeyButton_Click"/>
+                        <Button Content="⊹" Click="KeyButton_Click"/>
+                        <Button Content="⊺" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
 
@@ -354,6 +411,8 @@
                         <Button Content="∠" Click="KeyButton_Click"/>
                         <Button Content="⦜" Click="KeyButton_Click"/>
                         <Button Content="⦝" Click="KeyButton_Click"/>
+                        <Button Content="⊾" Click="KeyButton_Click"/>
+                        <Button Content="⊿" Click="KeyButton_Click"/>
                         <Button Content="⦞" Click="KeyButton_Click"/>
                         <Button Content="⦟" Click="KeyButton_Click"/>
                         <Button Content="⦣" Click="KeyButton_Click"/>
