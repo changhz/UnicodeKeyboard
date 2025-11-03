@@ -244,6 +244,36 @@
                         <Button Content="Ω" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
+
+                <!-- Logic Section (NEW) -->
+                <StackPanel x:Name="LogicSection" Visibility="Collapsed">
+                    <TextBlock Text="Logic" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="¬" Click="KeyButton_Click"/>
+                        <Button Content="∧" Click="KeyButton_Click"/>
+                        <Button Content="∨" Click="KeyButton_Click"/>
+                        <Button Content="→" Click="KeyButton_Click"/>
+                        <Button Content="↔" Click="KeyButton_Click"/>
+                        <Button Content="⇒" Click="KeyButton_Click"/>
+                        <Button Content="⇔" Click="KeyButton_Click"/>
+                        <Button Content="⟶" Click="KeyButton_Click"/>
+                        <Button Content="⟹" Click="KeyButton_Click"/>
+                        <Button Content="⟺" Click="KeyButton_Click"/>
+                        <Button Content="⊢" Click="KeyButton_Click"/>
+                        <Button Content="⊨" Click="KeyButton_Click"/>
+                        <Button Content="⊩" Click="KeyButton_Click"/>
+                        <Button Content="⊫" Click="KeyButton_Click"/>
+                        <Button Content="∴" Click="KeyButton_Click"/>
+                        <Button Content="∵" Click="KeyButton_Click"/>
+                        <Button Content="⊻" Click="KeyButton_Click"/>
+                        <Button Content="⊼" Click="KeyButton_Click"/>
+                        <Button Content="⊽" Click="KeyButton_Click"/>
+                        <Button Content="≡" Click="KeyButton_Click"/>
+                        <Button Content="≢" Click="KeyButton_Click"/>
+                        <Button Content="↦" Click="KeyButton_Click"/>
+                    </WrapPanel>
+                </StackPanel>
+
                 <!-- Geometry Section -->
                 <StackPanel x:Name="GeometrySection" Visibility="Collapsed">
                     <TextBlock Text="Geometry" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
@@ -290,8 +320,6 @@
                         <Button Content="∤" Click="KeyButton_Click"/>
                         <Button Content="∥" Click="KeyButton_Click"/>
                         <Button Content="∦" Click="KeyButton_Click"/>
-                        <Button Content="∧" Click="KeyButton_Click"/>
-                        <Button Content="∨" Click="KeyButton_Click"/>
                         <Button Content="⌽" Click="KeyButton_Click"/>
                         <Button Content="⌾" Click="KeyButton_Click"/>
                         <Button Content="⌿" Click="KeyButton_Click"/>
@@ -309,6 +337,8 @@
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="∠" Click="SectionButton_Click" Tag="Geometry"/>
+                        <!-- NEW: Logic selection button -->
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="⊢" Click="SectionButton_Click" Tag="Logic"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->
