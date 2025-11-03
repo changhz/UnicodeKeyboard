@@ -245,7 +245,7 @@
                     </WrapPanel>
                 </StackPanel>
 
-                <!-- Logic Section (NEW) -->
+                <!-- Logic Section -->
                 <StackPanel x:Name="LogicSection" Visibility="Collapsed">
                     <TextBlock Text="Logic" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -332,13 +332,12 @@
                 <StackPanel>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="∈" Click="SectionButton_Click" Tag="Set"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="⊢" Click="SectionButton_Click" Tag="Logic"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="∑" Click="SectionButton_Click" Tag="Arithmetics"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="∠" Click="SectionButton_Click" Tag="Geometry"/>
-                        <!-- NEW: Logic selection button -->
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="⊢" Click="SectionButton_Click" Tag="Logic"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->
