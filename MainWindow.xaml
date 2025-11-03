@@ -40,6 +40,11 @@
             <Setter Property="Margin" Value="0,10,0,5"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
+        <Style x:Key="SelectionBtnStyle" TargetType="Button">
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
     </Window.Resources>
     <Grid Background="#AA000000" Margin="10" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
         <Grid RowDefinitions="*,Auto">
@@ -245,11 +250,11 @@
                 <!-- Sidebar: Section buttons -->
                 <StackPanel>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Button Content="∈" Click="SectionButton_Click" Tag="Set"/>
-                        <Button Content="∑" Click="SectionButton_Click" Tag="Arithmetics"/>
-                        <Button Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
-                        <Button Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
-                        <Button Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∈" Click="SectionButton_Click" Tag="Set"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∑" Click="SectionButton_Click" Tag="Arithmetics"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->
