@@ -11,6 +11,7 @@
         <Style TargetType="Button">
             <Setter Property="Background" Value="#222222"/>
             <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="Margin" Value="2"/>
             <Setter Property="Width" Value="40"/>
             <Setter Property="Height" Value="40"/>
             <Setter Property="FontSize" Value="25"/>
@@ -180,16 +181,14 @@
             </Grid>
             <!-- Bottom view: Sidebar for section selection -->
             <Grid Grid.Row="1" Height="60">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
                 <!-- Sidebar: Section buttons -->
-                <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
-                    <Button Content="Set" Width="60" Height="40" Margin="2" Click="SectionButton_Click" Tag="Set"/>
-                    <Button Content="Arithmetics" Width="60" Height="40" Margin="2" Click="SectionButton_Click" Tag="Arithmetics"/>
-                    <Button Content="Numerics" Width="60" Height="40" Margin="2" Click="SectionButton_Click" Tag="Numerics"/>
-                    <Button Content="Arrows" Width="60" Height="40" Margin="2" Click="SectionButton_Click" Tag="Arrows"/>
+                <StackPanel>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="∈" Click="SectionButton_Click" Tag="Set"/>
+                        <Button Content="∑" Click="SectionButton_Click" Tag="Arithmetics"/>
+                        <Button Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
+                        <Button Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
+                    </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->
             </Grid>
