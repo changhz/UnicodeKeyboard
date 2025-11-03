@@ -365,6 +365,65 @@
                         <Button Content="‖" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
+
+                <!-- Script Section -->
+                <StackPanel x:Name="ScriptSection" Visibility="Collapsed">
+                    <TextBlock Text="Script Letters" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="𝒜" Click="KeyButton_Click"/>
+                        <Button Content="ℬ" Click="KeyButton_Click"/>
+                        <Button Content="𝒞" Click="KeyButton_Click"/>
+                        <Button Content="𝒟" Click="KeyButton_Click"/>
+                        <Button Content="ℰ" Click="KeyButton_Click"/>
+                        <Button Content="ℱ" Click="KeyButton_Click"/>
+                        <Button Content="𝒢" Click="KeyButton_Click"/>
+                        <Button Content="ℋ" Click="KeyButton_Click"/>
+                        <Button Content="ℐ" Click="KeyButton_Click"/>
+                        <Button Content="𝒥" Click="KeyButton_Click"/>
+                        <Button Content="𝒦" Click="KeyButton_Click"/>
+                        <Button Content="𝒧" Click="KeyButton_Click"/>
+                        <Button Content="𝒨" Click="KeyButton_Click"/>
+                        <Button Content="𝒩" Click="KeyButton_Click"/>
+                        <Button Content="𝒪" Click="KeyButton_Click"/>
+                        <Button Content="𝒫" Click="KeyButton_Click"/>
+                        <Button Content="𝒬" Click="KeyButton_Click"/>
+                        <Button Content="ℛ" Click="KeyButton_Click"/>
+                        <Button Content="𝒮" Click="KeyButton_Click"/>
+                        <Button Content="𝒯" Click="KeyButton_Click"/>
+                        <Button Content="𝒰" Click="KeyButton_Click"/>
+                        <Button Content="𝒱" Click="KeyButton_Click"/>
+                        <Button Content="𝒲" Click="KeyButton_Click"/>
+                        <Button Content="𝒳" Click="KeyButton_Click"/>
+                        <Button Content="𝒴" Click="KeyButton_Click"/>
+                        <Button Content="𝒵" Click="KeyButton_Click"/>
+                        <Button Content="𝒶" Click="KeyButton_Click"/>
+                        <Button Content="𝒷" Click="KeyButton_Click"/>
+                        <Button Content="𝒸" Click="KeyButton_Click"/>
+                        <Button Content="𝒹" Click="KeyButton_Click"/>
+                        <Button Content="ℯ" Click="KeyButton_Click"/>
+                        <Button Content="𝒻" Click="KeyButton_Click"/>
+                        <Button Content="𝑔" Click="KeyButton_Click"/>
+                        <Button Content="𝒽" Click="KeyButton_Click"/>
+                        <Button Content="𝒾" Click="KeyButton_Click"/>
+                        <Button Content="𝒿" Click="KeyButton_Click"/>
+                        <Button Content="𝓀" Click="KeyButton_Click"/>
+                        <Button Content="𝓁" Click="KeyButton_Click"/>
+                        <Button Content="𝓂" Click="KeyButton_Click"/>
+                        <Button Content="𝓃" Click="KeyButton_Click"/>
+                        <Button Content="𝑜" Click="KeyButton_Click"/>
+                        <Button Content="𝓅" Click="KeyButton_Click"/>
+                        <Button Content="𝓆" Click="KeyButton_Click"/>
+                        <Button Content="𝓇" Click="KeyButton_Click"/>
+                        <Button Content="𝓈" Click="KeyButton_Click"/>
+                        <Button Content="𝓉" Click="KeyButton_Click"/>
+                        <Button Content="𝓊" Click="KeyButton_Click"/>
+                        <Button Content="𝓋" Click="KeyButton_Click"/>
+                        <Button Content="𝓌" Click="KeyButton_Click"/>
+                        <Button Content="𝓍" Click="KeyButton_Click"/>
+                        <Button Content="𝓎" Click="KeyButton_Click"/>
+                        <Button Content="𝓏" Click="KeyButton_Click"/>
+                    </WrapPanel>
+                </StackPanel>
             </Grid>
             <!-- Bottom view: Sidebar for section selection -->
             <Grid Grid.Row="1" Height="30">
@@ -379,6 +438,7 @@
                         <Button Content="↗" Tag="Arrows" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                         <Button Content="⟦" Tag="Brackets" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                         <Button Content="∠" Tag="Geometry" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="𝒜" Tag="Script" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->

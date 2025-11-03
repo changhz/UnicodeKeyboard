@@ -63,6 +63,7 @@ namespace UnicodeKeyboard
             GeometrySection.Visibility = section == "Geometry" ? Visibility.Visible : Visibility.Collapsed;
             LogicSection.Visibility = section == "Logic" ? Visibility.Visible : Visibility.Collapsed;
             BracketsSection.Visibility = section == "Brackets" ? Visibility.Visible : Visibility.Collapsed;
+            ScriptSection.Visibility = section == "Script" ? Visibility.Visible : Visibility.Collapsed;
         }
 
         [DllImport("user32.dll", SetLastError = true)]
