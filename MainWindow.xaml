@@ -56,19 +56,43 @@
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Button Content="∈" Click="KeyButton_Click"/>
                         <Button Content="∉" Click="KeyButton_Click"/>
+                        <Button Content="∊" Click="KeyButton_Click"/>
+                        <Button Content="∋" Click="KeyButton_Click"/>
+                        <Button Content="∌" Click="KeyButton_Click"/>
+                        <Button Content="∍" Click="KeyButton_Click"/>
                         <Button Content="∪" Click="KeyButton_Click"/>
                         <Button Content="∩" Click="KeyButton_Click"/>
-                        <Button Content="⊆" Click="KeyButton_Click"/>
-                        <Button Content="⊇" Click="KeyButton_Click"/>
                         <Button Content="⊂" Click="KeyButton_Click"/>
                         <Button Content="⊃" Click="KeyButton_Click"/>
+                        <Button Content="⊆" Click="KeyButton_Click"/>
+                        <Button Content="⊇" Click="KeyButton_Click"/>
+                        <Button Content="⊄" Click="KeyButton_Click"/>
+                        <Button Content="⊅" Click="KeyButton_Click"/>
+                        <Button Content="⊈" Click="KeyButton_Click"/>
+                        <Button Content="⊉" Click="KeyButton_Click"/>
+                        <Button Content="⊊" Click="KeyButton_Click"/>
+                        <Button Content="⊋" Click="KeyButton_Click"/>
                         <Button Content="∅" Click="KeyButton_Click"/>
+                        <Button Content="∖" Click="KeyButton_Click"/>
+                        <Button Content="∁" Click="KeyButton_Click"/>
                         <Button Content="℘" Click="KeyButton_Click"/>
+                        <Button Content="⊌" Click="KeyButton_Click"/>
+                        <Button Content="⊍" Click="KeyButton_Click"/>
+                        <Button Content="⊎" Click="KeyButton_Click"/>
+                        <Button Content="⊏" Click="KeyButton_Click"/>
+                        <Button Content="⊐" Click="KeyButton_Click"/>
+                        <Button Content="⊑" Click="KeyButton_Click"/>
+                        <Button Content="⊒" Click="KeyButton_Click"/>
+                        <Button Content="⊓" Click="KeyButton_Click"/>
+                        <Button Content="⊔" Click="KeyButton_Click"/>
+                        <Button Content="⋃" Click="KeyButton_Click"/>
+                        <Button Content="⋂" Click="KeyButton_Click"/>
                         <Button Content="⊖" Click="KeyButton_Click"/>
                         <Button Content="⊕" Click="KeyButton_Click"/>
                         <Button Content="⊗" Click="KeyButton_Click"/>
                         <Button Content="⊥" Click="KeyButton_Click"/>
                         <Button Content="∃" Click="KeyButton_Click"/>
+                        <Button Content="∄" Click="KeyButton_Click"/>
                         <Button Content="∀" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
