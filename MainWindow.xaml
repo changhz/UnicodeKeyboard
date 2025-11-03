@@ -325,6 +325,46 @@
                         <Button Content="⌿" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
+
+                <!-- Brackets Section -->
+                <StackPanel x:Name="BracketsSection" Visibility="Collapsed">
+                    <TextBlock Text="Brackets, Dots and Bars" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="⟦" Click="KeyButton_Click"/>
+                        <Button Content="⟧" Click="KeyButton_Click"/>
+                        <Button Content="⟨" Click="KeyButton_Click"/>
+                        <Button Content="⟩" Click="KeyButton_Click"/>
+                        <Button Content="⟪" Click="KeyButton_Click"/>
+                        <Button Content="⟫" Click="KeyButton_Click"/>
+                        <Button Content="⌈" Click="KeyButton_Click"/>
+                        <Button Content="⌉" Click="KeyButton_Click"/>
+                        <Button Content="⌊" Click="KeyButton_Click"/>
+                        <Button Content="⌋" Click="KeyButton_Click"/>
+                        <Button Content="⦃" Click="KeyButton_Click"/>
+                        <Button Content="⦄" Click="KeyButton_Click"/>
+                        <Button Content="⦅" Click="KeyButton_Click"/>
+                        <Button Content="⦆" Click="KeyButton_Click"/>
+                        <Button Content="⦇" Click="KeyButton_Click"/>
+                        <Button Content="⦈" Click="KeyButton_Click"/>
+                        <Button Content="⦉" Click="KeyButton_Click"/>
+                        <Button Content="⦊" Click="KeyButton_Click"/>
+                        <Button Content="⟮" Click="KeyButton_Click"/>
+                        <Button Content="⟯" Click="KeyButton_Click"/>
+                        <Button Content="⦋" Click="KeyButton_Click"/>
+                        <Button Content="⦌" Click="KeyButton_Click"/>
+                        <Button Content="⦍" Click="KeyButton_Click"/>
+                        <Button Content="⦎" Click="KeyButton_Click"/>
+                        <Button Content="⦏" Click="KeyButton_Click"/>
+                        <Button Content="⦐" Click="KeyButton_Click"/>
+                        <Button Content="⋮" Click="KeyButton_Click"/>
+                        <Button Content="⋯" Click="KeyButton_Click"/>
+                        <Button Content="⋰" Click="KeyButton_Click"/>
+                        <Button Content="⋱" Click="KeyButton_Click"/>
+                        <Button Content="∥" Click="KeyButton_Click"/>
+                        <Button Content="∦" Click="KeyButton_Click"/>
+                        <Button Content="‖" Click="KeyButton_Click"/>
+                    </WrapPanel>
+                </StackPanel>
             </Grid>
             <!-- Bottom view: Sidebar for section selection -->
             <Grid Grid.Row="1" Height="30">
@@ -337,6 +377,7 @@
                         <Button Content="ℕ" Tag="Numerics" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                         <Button Content="α" Tag="GreekLetters" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                         <Button Content="↗" Tag="Arrows" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="⟦" Tag="Brackets" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                         <Button Content="∠" Tag="Geometry" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                     </WrapPanel>
                 </StackPanel>

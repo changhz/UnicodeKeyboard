@@ -61,7 +61,8 @@ namespace UnicodeKeyboard
             ArrowsSection.Visibility = section == "Arrows" ? Visibility.Visible : Visibility.Collapsed;
             GreekLettersSection.Visibility = section == "GreekLetters" ? Visibility.Visible : Visibility.Collapsed;
             GeometrySection.Visibility = section == "Geometry" ? Visibility.Visible : Visibility.Collapsed;
-            LogicSection.Visibility = section == "Logic" ? Visibility.Visible : Visibility.Collapsed; // NEW
+            LogicSection.Visibility = section == "Logic" ? Visibility.Visible : Visibility.Collapsed;
+            BracketsSection.Visibility = section == "Brackets" ? Visibility.Visible : Visibility.Collapsed;
         }
 
         [DllImport("user32.dll", SetLastError = true)]
