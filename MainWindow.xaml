@@ -244,6 +244,59 @@
                         <Button Content="Ω" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
+                <!-- Geometry Section -->
+                <StackPanel x:Name="GeometrySection" Visibility="Collapsed">
+                    <TextBlock Text="Geometry" Style="{StaticResource SectionHeaderTextBlockStyle}"/>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="°" Click="KeyButton_Click"/>
+                        <Button Content="∠" Click="KeyButton_Click"/>
+                        <Button Content="⦜" Click="KeyButton_Click"/>
+                        <Button Content="⦝" Click="KeyButton_Click"/>
+                        <Button Content="⦞" Click="KeyButton_Click"/>
+                        <Button Content="⦟" Click="KeyButton_Click"/>
+                        <Button Content="⦣" Click="KeyButton_Click"/>
+                        <Button Content="⦤" Click="KeyButton_Click"/>
+                        <Button Content="⦥" Click="KeyButton_Click"/>
+                        <Button Content="⦦" Click="KeyButton_Click"/>
+                        <Button Content="⦧" Click="KeyButton_Click"/>
+                        <Button Content="⦨" Click="KeyButton_Click"/>
+                        <Button Content="⦩" Click="KeyButton_Click"/>
+                        <Button Content="⦪" Click="KeyButton_Click"/>
+                        <Button Content="⦫" Click="KeyButton_Click"/>
+                        <Button Content="⦬" Click="KeyButton_Click"/>
+                        <Button Content="⦭" Click="KeyButton_Click"/>
+                        <Button Content="⦮" Click="KeyButton_Click"/>
+                        <Button Content="⦯" Click="KeyButton_Click"/>
+                        <Button Content="⦰" Click="KeyButton_Click"/>
+                        <Button Content="⦱" Click="KeyButton_Click"/>
+                        <Button Content="⦲" Click="KeyButton_Click"/>
+                        <Button Content="⦳" Click="KeyButton_Click"/>
+                        <Button Content="⦴" Click="KeyButton_Click"/>
+                        <Button Content="⦵" Click="KeyButton_Click"/>
+                        <Button Content="⦶" Click="KeyButton_Click"/>
+                        <Button Content="⦷" Click="KeyButton_Click"/>
+                        <Button Content="⦸" Click="KeyButton_Click"/>
+                        <Button Content="⦹" Click="KeyButton_Click"/>
+                        <Button Content="⦺" Click="KeyButton_Click"/>
+                        <Button Content="⦻" Click="KeyButton_Click"/>
+                        <Button Content="⦼" Click="KeyButton_Click"/>
+                        <Button Content="⦽" Click="KeyButton_Click"/>
+                        <Button Content="⦾" Click="KeyButton_Click"/>
+                        <Button Content="⦿" Click="KeyButton_Click"/>
+                        <Button Content="∡" Click="KeyButton_Click"/>
+                        <Button Content="∢" Click="KeyButton_Click"/>
+                        <Button Content="∟" Click="KeyButton_Click"/>
+                        <Button Content="∣" Click="KeyButton_Click"/>
+                        <Button Content="∤" Click="KeyButton_Click"/>
+                        <Button Content="∥" Click="KeyButton_Click"/>
+                        <Button Content="∦" Click="KeyButton_Click"/>
+                        <Button Content="∧" Click="KeyButton_Click"/>
+                        <Button Content="∨" Click="KeyButton_Click"/>
+                        <Button Content="⌽" Click="KeyButton_Click"/>
+                        <Button Content="⌾" Click="KeyButton_Click"/>
+                        <Button Content="⌿" Click="KeyButton_Click"/>
+                    </WrapPanel>
+                </StackPanel>
             </Grid>
             <!-- Bottom view: Sidebar for section selection -->
             <Grid Grid.Row="1" Height="30">
@@ -255,6 +308,7 @@
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
                         <Button Style="{StaticResource SelectionBtnStyle}" Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
+                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∠" Click="SectionButton_Click" Tag="Geometry"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->

@@ -60,6 +60,7 @@ namespace UnicodeKeyboard
             NumericsSection.Visibility = section == "Numerics" ? Visibility.Visible : Visibility.Collapsed;
             ArrowsSection.Visibility = section == "Arrows" ? Visibility.Visible : Visibility.Collapsed;
             GreekLettersSection.Visibility = section == "GreekLetters" ? Visibility.Visible : Visibility.Collapsed;
+            GeometrySection.Visibility = section == "Geometry" ? Visibility.Visible : Visibility.Collapsed;
         }
 
         [DllImport("user32.dll", SetLastError = true)]
