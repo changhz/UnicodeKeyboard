@@ -1,7 +1,7 @@
 ﻿<Window x:Class="UnicodeKeyboard.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Unicode Keyboard" Height="600" Width="400"
+        Title="Unicode Keyboard" Height="700" Width="400"
         Topmost="True"
         WindowStyle="None"
         ShowActivated="False"
@@ -242,6 +242,54 @@
                         <Button Content="Χ" Click="KeyButton_Click"/>
                         <Button Content="Ψ" Click="KeyButton_Click"/>
                         <Button Content="Ω" Click="KeyButton_Click"/>
+                        <Button Content="𝛼" Click="KeyButton_Click"/>
+                        <Button Content="𝛽" Click="KeyButton_Click"/>
+                        <Button Content="𝛾" Click="KeyButton_Click"/>
+                        <Button Content="𝛿" Click="KeyButton_Click"/>
+                        <Button Content="𝜀" Click="KeyButton_Click"/>
+                        <Button Content="𝜁" Click="KeyButton_Click"/>
+                        <Button Content="𝜂" Click="KeyButton_Click"/>
+                        <Button Content="𝜃" Click="KeyButton_Click"/>
+                        <Button Content="𝜄" Click="KeyButton_Click"/>
+                        <Button Content="𝜅" Click="KeyButton_Click"/>
+                        <Button Content="𝜆" Click="KeyButton_Click"/>
+                        <Button Content="𝜇" Click="KeyButton_Click"/>
+                        <Button Content="𝜈" Click="KeyButton_Click"/>
+                        <Button Content="𝜉" Click="KeyButton_Click"/>
+                        <Button Content="𝜊" Click="KeyButton_Click"/>
+                        <Button Content="𝜋" Click="KeyButton_Click"/>
+                        <Button Content="𝜌" Click="KeyButton_Click"/>
+                        <Button Content="𝜎" Click="KeyButton_Click"/>
+                        <Button Content="𝜏" Click="KeyButton_Click"/>
+                        <Button Content="𝜐" Click="KeyButton_Click"/>
+                        <Button Content="𝜑" Click="KeyButton_Click"/>
+                        <Button Content="𝜒" Click="KeyButton_Click"/>
+                        <Button Content="𝜓" Click="KeyButton_Click"/>
+                        <Button Content="𝜔" Click="KeyButton_Click"/>
+                        <Button Content="𝛢" Click="KeyButton_Click"/>
+                        <Button Content="𝛣" Click="KeyButton_Click"/>
+                        <Button Content="𝛤" Click="KeyButton_Click"/>
+                        <Button Content="𝛥" Click="KeyButton_Click"/>
+                        <Button Content="𝛦" Click="KeyButton_Click"/>
+                        <Button Content="𝛧" Click="KeyButton_Click"/>
+                        <Button Content="𝛨" Click="KeyButton_Click"/>
+                        <Button Content="𝛩" Click="KeyButton_Click"/>
+                        <Button Content="𝛪" Click="KeyButton_Click"/>
+                        <Button Content="𝛫" Click="KeyButton_Click"/>
+                        <Button Content="𝛬" Click="KeyButton_Click"/>
+                        <Button Content="𝛭" Click="KeyButton_Click"/>
+                        <Button Content="𝛮" Click="KeyButton_Click"/>
+                        <Button Content="𝛯" Click="KeyButton_Click"/>
+                        <Button Content="𝛰" Click="KeyButton_Click"/>
+                        <Button Content="𝛱" Click="KeyButton_Click"/>
+                        <Button Content="𝛲" Click="KeyButton_Click"/>
+                        <Button Content="𝛴" Click="KeyButton_Click"/>
+                        <Button Content="𝛵" Click="KeyButton_Click"/>
+                        <Button Content="𝛶" Click="KeyButton_Click"/>
+                        <Button Content="𝛷" Click="KeyButton_Click"/>
+                        <Button Content="𝛸" Click="KeyButton_Click"/>
+                        <Button Content="𝛹" Click="KeyButton_Click"/>
+                        <Button Content="𝛺" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
 
@@ -422,6 +470,58 @@
                         <Button Content="𝓍" Click="KeyButton_Click"/>
                         <Button Content="𝓎" Click="KeyButton_Click"/>
                         <Button Content="𝓏" Click="KeyButton_Click"/>
+                        <Button Content="𝐴" Click="KeyButton_Click"/>
+                        <Button Content="𝐵" Click="KeyButton_Click"/>
+                        <Button Content="𝐶" Click="KeyButton_Click"/>
+                        <Button Content="𝐷" Click="KeyButton_Click"/>
+                        <Button Content="𝐸" Click="KeyButton_Click"/>
+                        <Button Content="𝐹" Click="KeyButton_Click"/>
+                        <Button Content="𝐺" Click="KeyButton_Click"/>
+                        <Button Content="𝐻" Click="KeyButton_Click"/>
+                        <Button Content="𝐼" Click="KeyButton_Click"/>
+                        <Button Content="𝐽" Click="KeyButton_Click"/>
+                        <Button Content="𝐾" Click="KeyButton_Click"/>
+                        <Button Content="𝐿" Click="KeyButton_Click"/>
+                        <Button Content="𝑀" Click="KeyButton_Click"/>
+                        <Button Content="𝑁" Click="KeyButton_Click"/>
+                        <Button Content="𝑂" Click="KeyButton_Click"/>
+                        <Button Content="𝑃" Click="KeyButton_Click"/>
+                        <Button Content="𝑄" Click="KeyButton_Click"/>
+                        <Button Content="𝑅" Click="KeyButton_Click"/>
+                        <Button Content="𝑆" Click="KeyButton_Click"/>
+                        <Button Content="𝑇" Click="KeyButton_Click"/>
+                        <Button Content="𝑈" Click="KeyButton_Click"/>
+                        <Button Content="𝑉" Click="KeyButton_Click"/>
+                        <Button Content="𝑊" Click="KeyButton_Click"/>
+                        <Button Content="𝑋" Click="KeyButton_Click"/>
+                        <Button Content="𝑌" Click="KeyButton_Click"/>
+                        <Button Content="𝑍" Click="KeyButton_Click"/>
+                        <Button Content="𝑎" Click="KeyButton_Click"/>
+                        <Button Content="𝑏" Click="KeyButton_Click"/>
+                        <Button Content="𝑐" Click="KeyButton_Click"/>
+                        <Button Content="𝑑" Click="KeyButton_Click"/>
+                        <Button Content="𝑒" Click="KeyButton_Click"/>
+                        <Button Content="𝑓" Click="KeyButton_Click"/>
+                        <Button Content="𝑔" Click="KeyButton_Click"/>
+                        <Button Content="ℎ" Click="KeyButton_Click"/>
+                        <Button Content="𝑖" Click="KeyButton_Click"/>
+                        <Button Content="𝑗" Click="KeyButton_Click"/>
+                        <Button Content="𝑘" Click="KeyButton_Click"/>
+                        <Button Content="𝑙" Click="KeyButton_Click"/>
+                        <Button Content="𝑚" Click="KeyButton_Click"/>
+                        <Button Content="𝑛" Click="KeyButton_Click"/>
+                        <Button Content="𝑜" Click="KeyButton_Click"/>
+                        <Button Content="𝑝" Click="KeyButton_Click"/>
+                        <Button Content="𝑞" Click="KeyButton_Click"/>
+                        <Button Content="𝑟" Click="KeyButton_Click"/>
+                        <Button Content="𝑠" Click="KeyButton_Click"/>
+                        <Button Content="𝑡" Click="KeyButton_Click"/>
+                        <Button Content="𝑢" Click="KeyButton_Click"/>
+                        <Button Content="𝑣" Click="KeyButton_Click"/>
+                        <Button Content="𝑤" Click="KeyButton_Click"/>
+                        <Button Content="𝑥" Click="KeyButton_Click"/>
+                        <Button Content="𝑦" Click="KeyButton_Click"/>
+                        <Button Content="𝑧" Click="KeyButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
             </Grid>
