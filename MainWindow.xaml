@@ -331,13 +331,13 @@
                 <!-- Sidebar: Section buttons -->
                 <StackPanel>
                     <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∈" Click="SectionButton_Click" Tag="Set"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="⊢" Click="SectionButton_Click" Tag="Logic"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∑" Click="SectionButton_Click" Tag="Arithmetics"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="ℕ" Click="SectionButton_Click" Tag="Numerics"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="α" Click="SectionButton_Click" Tag="GreekLetters"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="↗" Click="SectionButton_Click" Tag="Arrows"/>
-                        <Button Style="{StaticResource SelectionBtnStyle}" Content="∠" Click="SectionButton_Click" Tag="Geometry"/>
+                        <Button Content="∈" Tag="Set" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="⊢" Tag="Logic" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="∑" Tag="Arithmetics" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="ℕ" Tag="Numerics" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="α" Tag="GreekLetters" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="↗" Tag="Arrows" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
+                        <Button Content="∠" Tag="Geometry" Style="{StaticResource SelectionBtnStyle}" Click="SectionButton_Click"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Optionally, add a placeholder in Grid.Column="1" if needed -->
